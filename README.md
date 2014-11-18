@@ -6,6 +6,7 @@ In this project, we developed a simple simulation of a “four-ball” billiard 
 
 ## Compile & Excute
 To compile and execute, use Visual Studio 2013. Open .sln file.
+
 CAUTION: When running in a debugging mode, there may be some lags in the speed of the game while pressing onto any keys.
 
 <br />
