@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{93B2A2C6-89F0-4C28-9DF7-4FDD7A357888}</ProjectGuid>
+    <RootNamespace>AProject3D</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Template\$(SolutionName)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Template\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Template\$(SolutionName)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Template\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;$(LibraryPath)</LibraryPath>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName).$(Configuration)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName).$(Configuration)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions> /VERBOSE:LIB /SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AGlareDefine.h" />
+    <ClInclude Include="AList.h" />
+    <ClInclude Include="AProgressiveMesh.h" />
+    <ClInclude Include="AHDRSystem.h" />
+    <ClInclude Include="ABrush.h" />
+    <ClInclude Include="AMap.h" />
+    <ClInclude Include="AMapInclude.h" />
+    <ClInclude Include="AMeshFFSkin.h" />
+    <ClInclude Include="AMeshRigid.h" />
+    <ClInclude Include="AMeshSHSkin.h" />
+    <ClInclude Include="AMeshSWSkin.h" />
+    <ClInclude Include="AModelBone.h" />
+    <ClInclude Include="AModelInclude.h" />
+    <ClInclude Include="AModelLoader.h" />
+    <ClInclude Include="AModelMesh.h" />
+    <ClInclude Include="AModelObject.h" />
+    <ClInclude Include="AModelTrack.h" />
+    <ClInclude Include="APackageFile.h" />
+    <ClInclude Include="AQuadTree.h" />
+    <ClInclude Include="AXMLFile.h" />
+    <ClInclude Include="Op128bit.h" />
+    <ClInclude Include="AModel.h" />
+    <ClInclude Include="AText.h" />
+    <ClInclude Include="GameScene.h" />
+    <ClInclude Include="AAlgorithm.h" />
+    <ClInclude Include="ADataTypes.h" />
+    <ClInclude Include="AGrid.h" />
+    <ClInclude Include="AKeyboard.h" />
+    <ClInclude Include="AUserDefine.h" />
+    <ClInclude Include="AWindow.h" />
+    <ClInclude Include="AScene.h" />
+    <ClInclude Include="AObject.h" />
+    <ClInclude Include="ATexture.h" />
+    <ClInclude Include="AGeometry.h" />
+    <ClInclude Include="AAnimation.h" />
+    <ClInclude Include="ADialog.h" />
+    <ClInclude Include="AButton.h" />
+    <ClInclude Include="AMath.h" />
+    <ClInclude Include="AInput.h" />
+    <ClInclude Include="AMouse.h" />
+    <ClInclude Include="ACamera.h" />
+    <ClInclude Include="Include.h" />
+    <ClInclude Include="AXModel.h" />
+    <ClInclude Include="TestScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AGlareDefine.cpp" />
+    <ClCompile Include="AProgressiveMesh.cpp" />
+    <ClCompile Include="AHDRSystem.cpp" />
+    <ClCompile Include="ABrush.cpp" />
+    <ClCompile Include="APackageFile.cpp" />
+    <ClCompile Include="APFinclude.h" />
+    <ClCompile Include="APFdefine.h" />
+    <ClCompile Include="AXModel.cpp" />
+    <ClCompile Include="Op128bit.cpp" />
+    <ClCompile Include="AQuadTree.cpp" />
+    <ClCompile Include="AMap.cpp" />
+    <ClCompile Include="AMeshFFSkin.cpp" />
+    <ClCompile Include="AMeshRigid.cpp" />
+    <ClCompile Include="AMeshSHSkin.cpp" />
+    <ClCompile Include="AMeshSWSkin.cpp" />
+    <ClCompile Include="AModelBone.cpp" />
+    <ClCompile Include="AModelLoader.cpp" />
+    <ClCompile Include="AModelMesh.cpp" />
+    <ClCompile Include="AModelObject.cpp" />
+    <ClCompile Include="AXMLFile.cpp" />
+    <ClCompile Include="AModelTrack.cpp" />
+    <ClCompile Include="AModelDefine.h" />
+    <ClCompile Include="AModel.cpp" />
+    <ClCompile Include="AText.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="AAlgorithm.cpp" />
+    <ClCompile Include="AGrid.cpp" />
+    <ClCompile Include="AKeyboard.cpp" />
+    <ClCompile Include="AWindow.cpp" />
+    <ClCompile Include="AScene.cpp" />
+    <ClCompile Include="AObject.cpp" />
+    <ClCompile Include="ATexture.cpp" />
+    <ClCompile Include="AGeometry.cpp" />
+    <ClCompile Include="AAnimation.cpp" />
+    <ClCompile Include="ADialog.cpp" />
+    <ClCompile Include="AButton.cpp" />
+    <ClCompile Include="AMath.cpp" />
+    <ClCompile Include="AInput.cpp" />
+    <ClCompile Include="AMouse.cpp" />
+    <ClCompile Include="ACamera.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="TestScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Deferred Rendering.fx" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
